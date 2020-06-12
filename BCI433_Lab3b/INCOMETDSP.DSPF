@@ -1,0 +1,48 @@
+000001200605     A          R GETINCOME
+000002200605     A                                  2 63DATE
+000003200605     A                                      EDTCDE(Y)
+000004200605     A                                  2 11USER
+000005200605     A                                  3 11'AMIR AMINZADEH'
+000006200605     A                                  3 35'INCOME TAXES'
+000007200605     A                                  5 11'Income:'
+000008200605     A                                  6 11'Married?'
+000009200605     A                                  6 23'Y/N'
+000010200605     A            MARRIED        1   B  6 20VALUES('Y' 'N')
+000011200605     A  60                                  DSPATR(PR)
+000012200605     A  97                                  DSPATR(PC)
+000014200605     A            INCOMEAMT      8Y 0B  5 20
+000015200605     A  60                                  DSPATR(PR)
+000016200605     A  98                                  DSPATR(PC)
+000017200605     A                                      EDTCDE(2)
+000018200605     A                                  8 31'ALLOWABLE DEDUCTIONS'
+000019200607     A                                 10 11'Student Expence:'
+000020200607     A                                 10 41'Charitable Donations:'
+000021200605     A  98                              5 31'Zero Income Amount'
+000022200605     A  97                              6 31'Blank Marital Status'
+000023200607     A            STDEXPENSE     7Y 0B 10 28
+000024200605     A  60                                  DSPATR(PR)
+000025200605     A                                      EDTCDE(2)
+000026200607     A            DONATIONS      7Y 0B 10 63
+000027200605     A  60                                  DSPATR(PR)
+000028200605     A                                      EDTCDE(2)
+000029200607     A          R YOURTAX                   CF03(03 'Exit Program')
+000030200607     A                                      OVERLAY
+000031200607     A                                 12 11'Deduction Allowed:'
+000032200611     A            DEDUCTIONS     6Y 0B 12 44EDTCDE(2)
+000033200607     A                                 14 11'Adjusted Income Amount:'
+000034200611     A            AINCOMEAMT     7Y 0B 14 42EDTCDE(2)
+000035200607     A                                 16 11'Tax Rate:'
+000036200611     A            TAXRATE        2N 0B 16 49
+000037200607     A                                 18 11'Taxes Owing:'
+000038200611     A            TAXAMT         6Y 0B 18 44EDTCDE(2)
+000039200607     A                                 20 11'Your Taxes Are Due in'
+000040200607     A                                 20 41'Days'
+000041200607     A            DAYSTOPAY      3Y 0B 20 35
+000042200607     A                                 22 51'AMIR AMINZADEH'
+000043200607     A                                 22 11'F3 - Exit'
+000100      
+000101200607     A*%%RS+<record-sequences>
+000102200607     A*%%RS+ <sequence name="Untitled">
+000103200607     A*%%RS+  <device type="display" width="80" height="24" />
+000104200607     A*%%RS+ </sequence>
+000105200607     A*%%RS </record-sequences>
