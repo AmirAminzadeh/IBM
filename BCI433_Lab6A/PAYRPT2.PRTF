@@ -1,0 +1,60 @@
+000001200619     A          R TITLE
+000002200619     A                                  1  2DATE(*YY)
+000003200619     A                                      EDTCDE(Y)
+000004200619     A                                  1 14TIME
+000005200619     A                                  1 45'Weekly Payroll Report'
+000006200619     A                                  1 92PAGNBR
+000007200619     A                                  1 86'Page:'
+000008200619     A                                  2  2'Name:'
+000009200619     A                                  2  8'Amir Aminzadeh'
+000010200701     A            SHIFTTYPE     30      2 41
+000011200619     A          R COLHDG                    SPACEB(1)
+000012200619     A                                     6'Employee'
+000013200619     A                                      SPACEB(1)
+000014200619     A                                    18'Work'
+000015200619     A                                    28'Pay'
+000016200619     A                                    36'Hourly'
+000017200619     A                                    47'Hours'
+000018200619     A                                    57'Regular'
+000019200619     A                                    71'Overtime'
+000020200619     A                                    89'Total'
+000021200619     A                                     7'Number'
+000022200619     A                                      SPACEB(1)
+000023200619     A                                    18'Shift'
+000024200619     A                                    28'Grade'
+000025200619     A                                    37'Rate'
+000026200619     A                                    47'Worked'
+000027200619     A                                    58'Pay'
+000028200619     A                                    73'Pay'
+000029200619     A                                    90'Pay'
+000030200619     A          R EMPDETAIL                 SPACEB(1)
+000031200620     A            EMPNUM    R              4
+000032200619     A                                      REFFLD(SHIFTWEEK/EMPNUM SENECAPAY/S-
+000033200619     A                                      HIFTWEEK)
+000034200619     A                                      EDTWRD('0   -   -   -')
+000035200620     A            WORKSHIFT R             20REFFLD(SHIFTWEEK/WORKSHIFT +
+000036200619     A                                      SENECAPAY/SHIFTWEEK)
+000037200619     A            PAYGRADE  R             30REFFLD(SHIFTWEEK/PAYGRADE +
+000038200619     A                                      SENECAPAY/SHIFTWEEK)
+000039200620     A            HOURLYRATE     5  2     36EDTCDE(1)
+000040200619     A            HRSWORKED R             48REFFLD(SHIFTWEEK/HRSWORKED +
+000041200619     A                                      SENECAPAY/SHIFTWEEK)
+000042200619     A            REGULARPAY     7  2     55EDTCDE(1)
+000043200619     A            OVERPAY        7  2     70EDTCDE(1)
+000044200619     A            WEEKLYPAY      7  2     86EDTCDE(1)
+000045200620     A          R TOTALS                    SPACEB(1)
+000046200620     A                                    41'Totals:'
+000047200620     A                                      SPACEB(2)
+000048200620     A            TOTREGPAY      9  2     52EDTCDE(1)
+000049200620     A            TOTOVTPAY      9  2     67EDTCDE(1)
+000051200620     A            TOTWKPAY       9  2     83EDTCDE(1)
+000100      
+000101200620     A*%%RS+<record-sequences>
+000102200620     A*%%RS+ <sequence name="Report1">
+000103200620     A*%%RS+  <device type="printer" width="132" height="66" />
+000104200620     A*%%RS+  <record-write record-format="TITLE" />
+000105200620     A*%%RS+  <record-write record-format="COLHDG" />
+000106200620     A*%%RS+  <record-write record-format="EMPDETAIL" />
+000107200620     A*%%RS+  <record-write record-format="TOTALS" />
+000108200620     A*%%RS+ </sequence>
+000109200620     A*%%RS </record-sequences>

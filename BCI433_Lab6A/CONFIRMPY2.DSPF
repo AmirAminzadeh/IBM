@@ -1,0 +1,23 @@
+000001200701     A          R RECORD1
+000002200701     A                                  2 21'SENECA Payroll Program Completed'
+000003200701     A                                  2 61DATE
+000004200701     A                                      EDTCDE(Y)
+000005200701     A                                  3 61TIME
+000006200701     A                                  2  3USER
+000007200701     A                                  3  3'Amir Aminzadeh'
+000008200701     A                                  5 11'Rates:'
+000009200701     A                                  6 21'Day Rate:'
+000010200701     A            DAYRATE        5  2B  6 42EDTCDE(1)
+000011200701     A                                  7 21'Afternoon Rate:'
+000012200701     A            AFTNRATE       5  2B  7 42EDTCDE(1)
+000013200701     A                                  8 21'Night Rate:'
+000014200701     A            NIGHTRATE      5  2B  8 42EDTCDE(1)
+000015200701     A                                 12 11'Totals:'
+000016200701     A                                 13 21'Regular Pay:'
+000017200701     A            TOTREGPAY      9  2B 13 41EDTCDE(1)
+000018200701     A                                 14 21'Overtime Pay:'
+000019200701     A            TOTOVTPAY      9Y 2B 14 41EDTCDE(1)
+000020200701     A                                 15 21'Company Payout:'
+000021200701     A            TOTEMPPAY      9Y 2B 15 41EDTCDE(1)
+000022200701     A            SHIFTTYPE     30   O 12 26
+000100      
